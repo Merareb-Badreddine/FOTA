@@ -64,7 +64,7 @@ static void BootLoader_Jump_TO_Application(uint8_t BL_Host_Buffer);
 
 static void BootLoader_Get_Version(uint8_t BL_Host_Buffer)
 {
-	uint8_t BL_Version[4] = {BL_Vendor_ID ,SW_Magor_ID ,SW_Minor_ID ,SW_Patch_ID}
+    uint8_t BL_Version[4] = {BL_Vendor_ID ,SW_Magor_ID ,SW_Minor_ID ,SW_Patch_ID}
 }
 static void BootLoader_Get_Chip_ID(uint8_t BL_Host_Buffer)
 {
