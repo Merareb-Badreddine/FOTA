@@ -19,38 +19,4 @@
 #define CMD_GO_TO_Main_APP        0x15
 
 
-static void BootLoader_Get_Version(uint8_t BL_Host_Buffer);
-static void BootLoader_Get_Chip_ID(uint8_t BL_Host_Buffer);
-static void BootLoader_Get_RDP_Status(uint8_t BL_Host_Buffer);
-static void BootLoader_Get_Application_Erase(uint8_t BL_Host_Buffer);
-static void BootLoader_Upload_Application(uint8_t BL_Host_Buffer);
-static void BootLoader_Jump_TO_Application(uint8_t BL_Host_Buffer);
-
 void BL_USART_Fetch_Host_CMD(void);
-
-
-
-static void BootLoader_Get_Version(uint8_t BL_Host_Buffer)
-{
-	
-}
-static void BootLoader_Get_Chip_ID(uint8_t BL_Host_Buffer)
-{
-	
-}
-static void BootLoader_Get_RDP_Status(uint8_t BL_Host_Buffer)
-{
-	
-}
-static void BootLoader_Get_Application_Erase(uint8_t BL_Host_Buffer)
-{
-	
-}
-static void BootLoader_Upload_Application(uint8_t BL_Host_Buffer)
-{
-	
-}
-static void BootLoader_Jump_TO_Application(uint8_t BL_Host_Buffer)
-{
-	
-}
