@@ -19,4 +19,11 @@
 #define CMD_GO_TO_Main_APP        0x15
 
 
+
+#define BL_Vendor_ID            200
+#define SW_Magor_ID             1
+#define SW_Minor_ID             0
+#define SW_Patch_ID             0
+
+
 void BL_USART_Fetch_Host_CMD(void);
