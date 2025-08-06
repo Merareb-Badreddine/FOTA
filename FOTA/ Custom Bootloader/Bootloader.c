@@ -1,0 +1,56 @@
+
+#include  "Bootloader.h" 
+
+void BL_FETCH_HOST_COMMAND(void)
+{
+    uint16_t Buffer[20];
+    uint16_t temp;
+    uint8_t DATA_LENGTH;
+    uint8_t i;
+
+    
+    MCAL_UART_ReceiveData(usartA, &temp, PollingEn);
+    DATA_LENGTH = (uint8_t)temp;
+
+   
+    for (i = 0; i < DATA_LENGTH; i++)
+    {
+        MCAL_UART_ReceiveData(usartA, &Buffer[i], PollingEn);
+    }
+
+   
+    switch ((uint8_t)Buffer[1])
+    {
+        case CMD_GET_Version:
+            BootLoader_Get_Version(uint8_t BL_Host_Buffer);
+            break;
+      case CMD_GET_CID_CMD:
+            BootLoader_Get_Chip_ID(uint8_t BL_Host_Buffer);
+            break;
+
+        case CMD_RDP_Status:
+            BootLoader_Get_RDP_Status(uint8_t BL_Host_Buffer);
+            break;
+
+        case CMD_FLASH_ERASE:
+            BootLoader_Get_Application_Erase(uint8_t BL_Host_Buffer);
+            break;
+      
+       case CMD_MEM_Write:
+            BootLoader_Upload_Application(uint8_t BL_Host_Buffer);
+            break;
+
+       case CMD_GO_TO_Main_APP:
+            BootLoader_Jump_TO_Application(uint8_t BL_Host_Buffer);
+            break;
+
+      default:
+
+            break;
+    }
+}
+
+
+
+
+
