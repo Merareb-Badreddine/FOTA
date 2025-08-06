@@ -50,6 +50,43 @@ void BL_FETCH_HOST_COMMAND(void)
     }
 }
 
+// ------------------------------------------------------------------------------------------//
+static void BootLoader_Get_Version(uint8_t BL_Host_Buffer);
+static void BootLoader_Get_Chip_ID(uint8_t BL_Host_Buffer);
+static void BootLoader_Get_RDP_Status(uint8_t BL_Host_Buffer);
+static void BootLoader_Get_Application_Erase(uint8_t BL_Host_Buffer);
+static void BootLoader_Upload_Application(uint8_t BL_Host_Buffer);
+static void BootLoader_Jump_TO_Application(uint8_t BL_Host_Buffer);
+
+
+
+
+
+static void BootLoader_Get_Version(uint8_t BL_Host_Buffer)
+{
+	
+}
+static void BootLoader_Get_Chip_ID(uint8_t BL_Host_Buffer)
+{
+	
+}
+static void BootLoader_Get_RDP_Status(uint8_t BL_Host_Buffer)
+{
+	
+}
+static void BootLoader_Get_Application_Erase(uint8_t BL_Host_Buffer)
+{
+	
+}
+static void BootLoader_Upload_Application(uint8_t BL_Host_Buffer)
+{
+	
+}
+static void BootLoader_Jump_TO_Application(uint8_t BL_Host_Buffer)
+{
+	
+}
+
 
 
 
