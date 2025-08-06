@@ -3,7 +3,7 @@
 
 void BL_FETCH_HOST_COMMAND(void)
 {
-    uint16_t Buffer[20];
+    uint16_t BL_Host_Buffer[BL_HOST_RX_BUFFER_LENGHT];
     uint16_t temp;
     uint8_t DATA_LENGTH;
     uint8_t i;
