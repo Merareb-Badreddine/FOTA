@@ -12,6 +12,7 @@
 
 
 #define CMD_GET_Version           0x10
+#define CMD_GET_CID_CMD           0x11
 #define CMD_RDP_Status            0x12
 #define CMD_FLASH_ERASE           0x13
 #define CMD_MEM_Write             0x14
