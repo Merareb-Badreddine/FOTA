@@ -80,7 +80,12 @@ static void BootLoader_Get_Application_Erase(uint8_t BL_Host_Buffer)
 }
 static void BootLoader_Upload_Application(uint8_t BL_Host_Buffer)
 {
+	uint16_t  Host_CMD_Packet_Len = 0;
+	uint32_t  Host_Addreas = 0;
+	uint8_t   Payload_Len = 0;
+
 	
+       Host_CMD_Packet_Len =  BL_Host_Buffer[0] + 1 ;
 }
 static void BootLoader_Jump_TO_Application(uint8_t BL_Host_Buffer)
 {
